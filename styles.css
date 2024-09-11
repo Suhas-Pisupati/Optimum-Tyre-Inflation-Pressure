@@ -12,8 +12,8 @@ body {
 }
 html{
     scroll-behavior:smooth;
-
 }
+
 header {
     background-color: rgba(70, 70, 70, 1);
     color: #fff;
@@ -27,7 +27,7 @@ h1, h7 {
 
 header {
     position: fixed;
-    width: 100%;;
+    width: 100%;
     background-color: #333;
     color: white;
     padding: 10px 0;
@@ -84,6 +84,7 @@ main {
     align-items: center;
     flex-direction: column;
 }
+
 #home {
     h2{
         text-align: center;
@@ -94,6 +95,7 @@ main {
     }
     margin-top: 120px;
 }
+
 section {
     scroll-margin-top: 130px;
     margin-bottom: 20px;
@@ -119,30 +121,36 @@ input, select, button, textarea {
 }
 
 button {
-    background-color:rgba(70, 70, 70, 1);
+    background-color: rgba(70, 70, 70, 1);
     color: #fff;
     border: none;
     cursor: pointer;
 }
+
 #Welcome{
     margin-bottom: 10px;
 }
+
 button:hover {
-    background-color:#2e901a;
+    background-color: #2e901a;
 }
+
 #tips ul {
     list-style: disc inside;
     padding: 0;
 }
+
 #tips{
     margin-bottom: 50px;
 }
+
 #tips ul li {
     margin: 5px 0;
     padding-left: 20px;
     line-height: 1.6;
 }
 
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -152,4 +160,26 @@ footer {
     width: 100%;
     bottom: 0;
     height: max-content;
+}
+
+/* Install button section */
+#installButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#installButton:hover {
+    background-color: #45a049;
+}
+
+#installSection {
+    text-align: center;
+    margin-top: 50px;
 }
