@@ -86,14 +86,17 @@ main {
 }
 
 #home {
-    h2{
-        text-align: center;
-    }
-    p{
-        text-align: justify;
-        font-size: large;
-    }
+    /* Incorrect nested CSS removed */
     margin-top: 120px;
+}
+
+#home h2 {
+    text-align: center;
+}
+
+#home p {
+    text-align: justify;
+    font-size: large;
 }
 
 section {
