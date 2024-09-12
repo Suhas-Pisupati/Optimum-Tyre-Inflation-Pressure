@@ -48,12 +48,21 @@ if ('serviceWorker' in navigator) {
     console.log('PWA was installed');
   });
   
-  // Placeholder functions for searchTyrePressure and calculatePressure
   function searchTyrePressure() {
-    // Your existing implementation
-  }
-  
-  function calculatePressure() {
-    // Your existing implementation
-  }
+    const vehicleType = document.getElementById('vehicleType').value;
+    const make = document.getElementById('make').value;
+    const model = document.getElementById('model').value;
+
+    fetch('tyrePressureData.json')
+        .then(response => response.json())
+        .then(data => {
+            const vehicleData = data[vehicleType][make][model];
+            if (vehicleData) {
+                document.getElementById('result').innerHTML = `Recommended Pressure: ${vehicleData.pressure} PSI<br>${vehicleData.low}<br>${vehicleData.high}`;
+            } else {
+                document.getElementById('result').innerHTML = 'Vehicle not found!';
+            }
+        });
+}
+
   
